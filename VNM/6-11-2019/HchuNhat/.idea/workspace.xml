@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6273aee-648a-4e0d-bb71-e7d9b1ef79a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Fan1/Fan1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Fan1/src/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PtBac2/PtBac2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PtBac2/src/PTBac2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HchuNhat/META-INF/HchuNhat.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08-11-2019/Shape/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08-11-2019/Shape/src/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08-11-2019/Shape/src/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08-11-2019/Shape/src/Colorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08-11-2019/Shape/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08-11-2019/Shape/src/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08-11-2019/Shape/src/mainCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08-11-2019/Shape/src/mainCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08-11-2019/Shape2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08-11-2019/Shape2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11-11-2019/Comparator/src/MainCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11-11-2019/Comparator/src/MainCircle.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +80,7 @@
       <workItem from="1573003520568" duration="3746000" />
       <workItem from="1573008034047" duration="4000" />
       <workItem from="1573009261932" duration="2211000" />
+      <workItem from="1573530089883" duration="228000" />
     </task>
     <servers />
   </component>
@@ -93,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
