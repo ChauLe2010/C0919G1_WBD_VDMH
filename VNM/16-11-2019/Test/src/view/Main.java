@@ -4,6 +4,7 @@ import controller.ProductController;
 import model.Product;
 import repository.ProductsCompre;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -30,36 +31,42 @@ public class Main {
                 }
                 case 3:{
                     Scanner scanner1 = new Scanner(System.in);
-                    System.out.println("Nhap vao vi tri ban muon xoa");
+                    System.out.println("Nhap vao vi tri ban muon sua");
                     int choice1 = scanner1.nextInt();
-                    if(choice1 >0 && choice1 < 5) {
+
                         Product product = Main.productUpdate();
                         productController.updateProduct(choice1, product);
-                    }
-                    else
-                        System.out.println("Moi nhap lai");
                     break;
                 }
                 case 4:{
 
                     Scanner scanner1 = new Scanner(System.in);
-                    System.out.println("Nhap vao vi tri ban sua");
+                    System.out.println("Nhap vao vi tri ban xoa");
                     int choice1 = scanner1.nextInt();
-                    if(choice1 >0 && choice1 < 5) {
+
                         productController.removeProduct(choice1);
-                    }
-                    else
-                        System.out.println("Moi nhap lai");
+
+                        System.out.println("da xoa");
                     break;
                 }
-                case 5:{
-                    System.out.println("Nhap ten ");
-                    String nameProduct = new Scanner(System.in).nextLine();
-                    productController.finByName(nameProduct);
+                case 5: {
+                    System.out.println("Nhap ten san pham muon tim: ");
+                    String nameSp = new Scanner(System.in).nextLine();
+                    Product product = productController.findByName(nameSp);
+                    if (product != null){
+                        System.out.println(product.getName());
+                    }else {
+                        System.out.println("Khong tim thay ten san pham");
+                    }
+
                     break;
                 }
                 case 6:{
                     productController.comparePrice();
+                    List<Product> productList = productController.getProducts();
+                    for (Product k : productList){
+                        System.out.println("ID: " + k.getId() + " Name: " + k.getName() + ", Cost: " + k.getCost());
+                    }
                     break;
                 }
                 case 0:{

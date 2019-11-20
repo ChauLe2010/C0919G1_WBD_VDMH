@@ -42,7 +42,7 @@ public class ProductRepositoryImpl implements IProductRepository {
 
     @Override
     public void Update(int id, Product product) {
-        int index = 1;
+        int index = -1;
     for (int i =0; i < listProducts.size();i++) {
         if (listProducts.get(i).getId() == id) {
             index = i;
@@ -54,27 +54,21 @@ public class ProductRepositoryImpl implements IProductRepository {
     }
 
     @Override
-    public void findByName(String name) {
-        ArrayList<Product> listProduct1 = new ArrayList<>();
-        for (int i = 0; i < listProducts.size();i++){
-        if (listProducts.get(i).getName().contains(name)){
-            listProduct1.add(listProducts.get(i)) ;
+    public Product findbyName(String name) {
+        for (int i = 0; i < listProducts.size(); i++) {
+            if (listProducts.get(i).getName().contains(name)) {
+                return listProducts.get(i);
+            }
+
         }
+        return null;
     }
-    for (Product p : listProduct1){
-        System.out.println("ID: " + p.getId() + " Name: " + p.getName());
-
-    }
-    }
-
 
 
     @Override
     public void comparePrice() {
         ProductsCompre productsCompre = new ProductsCompre();
         Collections.sort(listProducts, productsCompre);
-        for (Product k : listProducts){
-            System.out.println("ID: " + k.getId() + " Name: " + k.getName() + " Cost: " + k.getCost());
-        }
+
     }
 }

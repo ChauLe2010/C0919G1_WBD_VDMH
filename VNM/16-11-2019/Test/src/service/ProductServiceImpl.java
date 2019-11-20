@@ -32,8 +32,8 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public void findbyName(String name) {
-    productRepository.findByName(name);
+    public Product findByName(String name) {
+       return productRepository.findbyName(name);
     }
 
     @Override

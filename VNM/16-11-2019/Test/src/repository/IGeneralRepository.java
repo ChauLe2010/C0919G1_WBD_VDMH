@@ -1,5 +1,7 @@
 package repository;
 
+import model.Product;
+
 import java.util.List;
 
 public interface IGeneralRepository<E> {
@@ -7,6 +9,6 @@ public interface IGeneralRepository<E> {
     void add(E e);
     void remove(int id);
     void Update(int id, E e);
-    void findByName(String name);
+    Product findbyName(String name);
 
 }
